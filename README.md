@@ -1,45 +1,51 @@
+# Project Setup Instructions
 
-### Introduction
+## Prerequisites
 
-The Trading Economics API provides you with direct access to 300.000 economic indicators, exchange rates, stock market indexes, government bond yields and commodity prices. Providing several request methods to query our databases, with samples available in different programming languages, it is the best way to export data in XML, CSV or JSON format. The API can be used to feed a custom developed application, a public website or just off-the-shelf software like Microsoft Excel.
+- Ensure you have [Node.js](https://nodejs.org/) installed (version 14.x or higher recommended).
+- A package manager like [npm](https://www.npmjs.com/) or [pnpm](https://pnpm.io/) installed.
 
-#
+## Installation
 
-**Documentation**
+1. **Clone the repository**:
 
-https://docs.tradingeconomics.com/
+   ```bash
+   git clone https://github.com/matrixersp/tradingeconomics.git
+   cd tradingeconomics
+   ```
 
-#
+2. **Install dependencies**:
+   Using npm:
 
-**GitHub Examples**
+   ```bash
+   npm install
+   ```
 
-https://github.com/tradingeconomics/tradingeconomics
+   Or using pnpm:
 
-#
+   ```bash
+   pnpm install
+   ```
 
-**Python**
+3. **Set up environment variables**:
+   - Copy the example environment file to create your own `.env` file:
 
-[https://github.com/tradingeconomics/tradingeconomics-python](https://github.com/tradingeconomics/tradingeconomics-python)
+     ```bash
+     cp example.env .env
+     ```
 
-#
+   - Open the `.env` file in a text editor and update the variables with your specific configuration (e.g., API keys, database credentials, etc.).
 
-**Jupyter Notebooks**
+## Running the Project
 
-https://github.com/tradingeconomics/notebooks
+- After setting up the `.env` file, you can start the project with:
 
-#
+  ```bash
+  npm run dev
+  ```
 
-**Docker**
+  Or with yarn:
 
-https://hub.docker.com/u/tradingeconomics
-
-#
-
-**Learn More**
-
-https://tradingeconomics.com/api/
-
-
-
-
-
+  ```bash
+  pnpm run dev
+  ```
